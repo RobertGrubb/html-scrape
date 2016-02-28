@@ -1,7 +1,7 @@
 {
   "name": "html-scrape",
   "description": "A lightweight tool that scrapes webpages with ease.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib",
   "scripts": {
     "clean": "rimraf lib",
@@ -17,7 +17,17 @@
     "needle",
     "haystack",
     "match",
-    "replace"
+    "html",
+    "url",
+    "host",
+    "website",
+    "webpage",
+    "web",
+    "site",
+    "page",
+    "dom",
+    "scrape",
+    "jquery"
   ],
   "homepage": "https://github.com/RobertGrubb/html-scrape",
   "devDependencies": {
