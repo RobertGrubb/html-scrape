@@ -16,7 +16,7 @@ Example of usage for finding a value in between something:
 		explicit: { el: '#explicit > a' }
 	}
 
-	scrape ('https://npmjs.com', elements, (error, data) => {
+	scrape ('https://npmjs.com', elements, function (error, data) {
 		if (error) {
 			console.log(error);
 		} else {

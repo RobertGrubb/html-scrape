@@ -1,7 +1,7 @@
 {
   "name": "html-scrape",
   "description": "A lightweight tool that scrapes webpages with ease.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib",
   "scripts": {
     "clean": "rimraf lib",
