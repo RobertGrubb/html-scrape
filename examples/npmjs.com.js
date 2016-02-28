@@ -2,10 +2,10 @@ var scrape = require('../lib');
 
 var elements = {
   title: { start: '<title>', end: '</title>' },
-  meta: { start: '<meta content="', end: '"'}
+  explicit: { el: '#explicit > a' }
 }
 
-scrape ('http://www.google.com', elements, (error, data) => {
+scrape ('https://npmjs.com', elements, (error, data) => {
   if (error) {
     console.log(error);
   } else {

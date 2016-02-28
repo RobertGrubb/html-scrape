@@ -13,10 +13,10 @@ Example of usage for finding a value in between something:
 
 	var elements = {
 		title: { start: '<title>', end: '</title>' },
-		meta: { start: '<meta content="', end: '"'}
+		explicit: { el: '#explicit > a' }
 	}
 
-	scrape ('http://www.google.com', elements, (error, data) => {
+	scrape ('https://npmjs.com', elements, (error, data) => {
 		if (error) {
 			console.log(error);
 		} else {
@@ -26,19 +26,18 @@ Example of usage for finding a value in between something:
 
 Above would return:
 
-	{
-		title: 'Google',
-		meta: 'Search the world\'s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you\'re looking for.'
-	}
+	{ title: 'npm', explicit: 'packages people \'npm install\' a lot'  }
 
 ## options
 > **host** [string | required] - URL of webpage you are wanting to scrape.
 
 > **elements** [string | required] - String that you will be searching.
 
-> > **start** [string | required] - String before the value you are searching for. For instance - `<title>value</title>`: In this example, the header would be `<title>`
+> > **start** String before the value you are searching for. For instance - `<title>value</title>`: In this example, the header would be `<title>`. **If using the needle method, both start and end are required**
 
-> > **end** (find, replace) [string | required] - String after the value you are searching for. For instance - `<title>value</title>`: In this example, the header would be `</title>`
+> > **end** String after the value you are searching for. For instance - `<title>value</title>`: In this example, the header would be `</title>`. **If using the needle method, both start and end are required**
+
+> > **el** [string] Element id/class to get value of. Can also be declared like: `#el > a` to get value of the link.
 
 > **callback** [function] - Function that returns data after scraping is finished.
 

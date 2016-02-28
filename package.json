@@ -1,7 +1,7 @@
 {
   "name": "html-scrape",
   "description": "A lightweight tool that scrapes webpages with ease.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "./lib",
   "scripts": {
     "clean": "rimraf lib",
@@ -31,6 +31,8 @@
     "lib/"
   ],
   "dependencies": {
+    "jquery": "^2.2.1",
+    "jsdom": "^8.0.4",
     "lodash": "^4.5.1",
     "needler": "0.0.7",
     "request": "^2.69.0"
