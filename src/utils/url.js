@@ -10,8 +10,6 @@ const url = (host, callback) => {
   // Use request to grab the host's body.
   request(host, (error, response, body) => {
 
-    console.log(response.statusCode);
-
     // If error, or statusCode is off
     if (error || response.statusCode !== 200) {
       callback(error);
