@@ -1,4 +1,4 @@
-# HTML Scrape
+# HTML Scrape [![Build Status](https://travis-ci.org/RobertGrubb/html-scrape.svg?branch=master)](https://travis-ci.org/RobertGrubb/html-scrape)
 ----------------
 
 A tool that will scrape html webpages with ease.
