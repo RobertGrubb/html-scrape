@@ -4,13 +4,20 @@
   "version": "0.1.4",
   "main": "./lib",
   "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
     "clean": "rimraf lib",
     "compile": "./node_modules/.bin/babel --presets es2015,stage-2 -d lib/ src/",
-    "prepublish": "npm run clean && npm run compile"
+    "prepublish": "npm run clean && npm run compile && npm run test"
   },
+  "author": "Robert Grubb",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RobertGrubb/html-scrape.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/RobertGrubb/html-scrape/issues"
   },
   "keywords": [
     "regex",
@@ -35,6 +42,8 @@
     "babel-core": "^6.5.2",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "rimraf": "^2.5.2"
   },
   "files": [

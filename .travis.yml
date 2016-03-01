@@ -1,0 +1,6 @@
+# languages
+language: node_js
+# node js versions
+node_js:
+    - '4.2'
+    - '5.5'
